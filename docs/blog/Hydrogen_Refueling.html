@@ -7926,8 +7926,7 @@ the hydrogen produced by the electrolyzer is collected in another storage tank.<
         <span class="s1">'Storage_Tank_2_Pressure'</span><span class="p">:</span> <span class="n">storage_tanks</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">'pressure'</span><span class="p">],</span>
         <span class="s1">'Input_to_Storage_1'</span><span class="p">:</span> <span class="n">input_to_storage_1</span><span class="p">,</span>
         <span class="s1">'Input_to_Storage_2'</span><span class="p">:</span> <span class="n">input_to_storage_2</span><span class="p">,</span>
-        <span class="s1">'Accumulated_Hydrogen'</span><span class="p">:</span> <span class="n">accumulated_hydrogen</span>
-    <span class="p">})</span>
+        <span class="s1">'Accumulated_Hydrogen'</span><span class="p">:</span> <span class="n">accumulated_hydrogen</span><span class="p">})</span>
 
 <span class="c1"># Convert results to Dataframe for easy analysis</span>
 <span class="n">refuel_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">refuel_data</span><span class="p">)</span>
@@ -8081,9 +8080,9 @@ the hydrogen produced by the electrolyzer is collected in another storage tank.<
         <span class="n">ticktext</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="o">//</span><span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:00"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">time_labels</span><span class="p">),</span> <span class="mi">4</span><span class="p">)]</span>
     <span class="p">),</span>
     <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>             <span class="c1"># Position legend on the left</span>
+        <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>             <span class="c1"># Position legend on the right</span>
         <span class="n">y</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>           <span class="c1"># Center legend vertically in the middle</span>
-        <span class="n">xanchor</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span>  <span class="c1"># Anchor to the left side</span>
+        <span class="n">xanchor</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span>  <span class="c1"># Anchor to the right side</span>
         <span class="n">yanchor</span><span class="o">=</span><span class="s1">'middle'</span><span class="p">,</span> <span class="c1"># Center the legend vertically</span>
         <span class="n">traceorder</span><span class="o">=</span><span class="s1">'normal'</span>
     <span class="p">),</span>
@@ -8259,9 +8258,9 @@ if (outputEl) {{
         <span class="n">ticktext</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="o">//</span><span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:00"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">time_labels</span><span class="p">),</span> <span class="mi">4</span><span class="p">)]</span>
     <span class="p">),</span>
     <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>             <span class="c1"># Position legend on the left</span>
+        <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>             <span class="c1"># Position legend on the right</span>
         <span class="n">y</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>           <span class="c1"># Center legend vertically in the middle</span>
-        <span class="n">xanchor</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span>  <span class="c1"># Anchor to the left side</span>
+        <span class="n">xanchor</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span>  <span class="c1"># Anchor to the right side</span>
         <span class="n">yanchor</span><span class="o">=</span><span class="s1">'middle'</span><span class="p">,</span> <span class="c1"># Center the legend vertically</span>
         <span class="n">traceorder</span><span class="o">=</span><span class="s1">'normal'</span>
     <span class="p">),</span>
